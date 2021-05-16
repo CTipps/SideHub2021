@@ -7,13 +7,10 @@ namespace KnockKnockJokes
     {
         static void Main(string[] args)
         {
+            JokeList jokes = new JokeList();
             Random rand = new Random();
-            List<string> whosThere = new List<string>();
-            List<string> punchline = new List<string>();
-            whosThere.Add("Boo");
-            punchline.Add("Don't cry it's only a joke.");
-            
-            int jokeNumber = rand.Next(0, whosThere.Count - 1);
+
+            int jokeNumber = rand.Next(0, jokes.opener.Count - 1);
 
             Console.Write("Would you like to hear a Knock Knock Joke? Y/N : ");
             string answer = Console.ReadLine().ToUpper();
@@ -36,16 +33,17 @@ namespace KnockKnockJokes
             {
                 Console.WriteLine(" That's not the right response. It's 'Who's there?'. But that's okay, let's continue.");
             }
-            Console.WriteLine(whosThere[jokeNumber]);
+            Console.WriteLine(jokes.opener[jokeNumber]);
             string prePunch = Console.ReadLine().ToLower();
-            if (prePunch != whosThere[jokeNumber].ToLower() + " who" && prePunch != whosThere[jokeNumber].ToLower() + " who?")
+            if (prePunch != jokes.opener[jokeNumber].ToLower() + " who" && prePunch != jokes.opener[jokeNumber].ToLower() + " who?")
             {
                 Console.WriteLine("Wow, you're really bad at knock knock jokes! Kinda tired of fixing your mistakes. Have a nice day!");
             }
             else
             {
-                Console.WriteLine(punchline[jokeNumber]);
-            }
+                Console.WriteLine(jokes.GetPunchline(jokeNumber));
+            } Console.Write("Hit any key to exit.");
+            Console.ReadLine();
 
 
         }
