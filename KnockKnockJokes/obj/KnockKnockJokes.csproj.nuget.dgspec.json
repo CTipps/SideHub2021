@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\practice-projects\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj": {}
+    "C:\\Users\\Student\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj": {}
   },
   "projects": {
-    "D:\\practice-projects\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj": {
+    "C:\\Users\\Student\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\practice-projects\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj",
+        "projectUniqueName": "C:\\Users\\Student\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj",
         "projectName": "KnockKnockJokes",
-        "projectPath": "D:\\practice-projects\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj",
-        "packagesPath": "C:\\Users\\Bouch\\.nuget\\packages\\",
-        "outputPath": "D:\\practice-projects\\SideHub2021\\KnockKnockJokes\\obj\\",
+        "projectPath": "C:\\Users\\Student\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj",
+        "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Student\\SideHub2021\\KnockKnockJokes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Bouch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -54,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
