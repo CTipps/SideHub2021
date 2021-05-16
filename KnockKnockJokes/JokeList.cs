@@ -8,12 +8,12 @@ namespace KnockKnockJokes
     {
         public List<string> opener = new List<string>(){
             "Boo",
-            "Owl's",
+            "Owls",
             "Woo",
-        "Nobel",
-        "Tank",
-        "Water",
-        "To"};
+            "Nobel",
+            "Tank",
+            "Water",
+            "To"};
 
         private List<string> punchline = new List<string>() {
             "Don't cry, it's only a joke!",
