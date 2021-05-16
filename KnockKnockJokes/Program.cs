@@ -42,21 +42,19 @@ namespace KnockKnockJokes
             {
                 if (mistake)
                 {
-                    Console.WriteLine("Wow, you're really bad at knock knock jokes! You're supposed to say '" + jokes.opener[jokeNumber] + " who?'.");
+                    Console.WriteLine("Wow, you're really bad at knock knock jokes! You're supposed to say '" + jokes.opener[jokeNumber] + " who?'. Then I say:");
                 }
                 else
                 {
-                    Console.WriteLine("That's not right, it's: " + jokes.opener[jokeNumber] + " who?");
+                    Console.WriteLine("That's not right, it's: " + jokes.opener[jokeNumber] + " who? Then I say:");
                 }
             }
-            else
-            {
                 Console.WriteLine(jokes.GetPunchline(jokeNumber));
-            }
-            Console.Write("Hit any key to exit.");
-            Console.ReadLine();
 
+                Console.Write("Hit any key to exit.");
+                Console.ReadLine();
 
+            
         }
     }
 }
