@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace KnockKnockJokes
 {
@@ -11,6 +12,8 @@ namespace KnockKnockJokes
             Random rand = new Random();
             bool mistake = false;
             bool hearAJoke = true;
+            int bananaLoop = rand.Next(3, 7);
+            int jokeNumber = rand.Next(0, jokes.opener.Count);
 
             Console.Write("Would you like to hear a Knock Knock Joke? Y/N : ");
             string answer = Console.ReadLine().ToUpper();
@@ -28,28 +31,36 @@ namespace KnockKnockJokes
                 Console.WriteLine("I'm not sure what you said, but I think you want to hear one.");
             }
             while (hearAJoke)
-            {
-                int jokeNumber = rand.Next(0, jokes.opener.Count - 1);
-                Console.WriteLine("Knock Knock");
-                string response = Console.ReadLine().ToLower();
-                if (response != "who's there?" && response != "who's there")
+            { 
+                string jokeOpener = jokes.opener[jokeNumber];
+                if (jokeOpener == "Banana")
                 {
-                    mistake = true;
-                    Console.WriteLine(" That's not the right response. It's 'Who's there?'. But that's okay, let's continue.");
+                    jokes.BananaTime(bananaLoop);
+                    jokeNumber++;
                 }
-                Console.WriteLine(jokes.opener[jokeNumber]);
-                string prePunch = Console.ReadLine().ToLower();
-
-
-                if (prePunch != jokes.opener[jokeNumber].ToLower() + " who" && prePunch != jokes.opener[jokeNumber].ToLower() + " who?")
+                else
                 {
-                    if (mistake)
+                    Console.WriteLine("Knock Knock");
+                    answer = Console.ReadLine().ToLower();
+                    if (!jokes.whosThere.Contains(answer))
                     {
-                        Console.WriteLine("Wow, you're really bad at knock knock jokes! You're supposed to say '" + jokes.opener[jokeNumber] + " who?'. Then I say:");
+                        mistake = true;
+                        Console.WriteLine(" That's not the right response. It's 'Who's there?'. But that's okay, let's continue.");
                     }
-                    else
+                    Console.WriteLine(jokeOpener);
+                    string prePunch = Console.ReadLine().ToLower();
+
+
+                    if (prePunch != jokeOpener.ToLower() + " who" && prePunch != jokeOpener.ToLower() + " who?")
                     {
-                        Console.WriteLine("That's not right, it's: " + jokes.opener[jokeNumber] + " who? Then I say:");
+                        if (mistake)
+                        {
+                            Console.WriteLine("Wow, you're really bad at knock knock jokes! You're supposed to say '" + jokeOpener + " who?'. Then I say:");
+                        }
+                        else
+                        {
+                            Console.WriteLine("That's not right, it's: " + jokeOpener + " who? Then I say:");
+                        }
                     }
                 }
                 Console.WriteLine(jokes.GetPunchline(jokeNumber));
@@ -64,9 +75,10 @@ namespace KnockKnockJokes
                     Console.WriteLine("That's a shame!");
                     hearAJoke = false;
                 }
-            }
+            
                 Console.Write("Hit any key to exit.");
                 Console.ReadLine();
+            }
 
             
         }
