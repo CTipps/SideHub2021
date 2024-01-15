@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "3kwrqUnpWtSodv0iPRgZSQOBsPRPqVakq4bhnlpZUTt6SZ1Fk6asCCxRWLf0+2Hv27LIpsA9oJ7BR8MaylSeOA==",
+  "dgSpecHash": "8dJ6+1E4BLWctM7W1q0mPjdqk8IINpjyZ53JRlXqh9cQJSGDC+lrJ64tbaMxb+AFYa0jT5LPEvmfrINThe5+xQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Student\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\practice-projects\\SideHub2021\\KnockKnockJokes\\KnockKnockJokes.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Bouch\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Bouch\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Bouch\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Bouch\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
